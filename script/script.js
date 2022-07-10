@@ -90,10 +90,12 @@ $(document).ready(function() {
     $(".nav-opener").click(function() {
         if (menuSwitch) {
             $(".menu").addClass("active");
+            $(".nav-opener a").eq(0).addClass("active")
             menuSwitch = false;
         } else {
             console.log("agagag");
             $(".menu").removeClass("active");
+            $(".nav-opener a").eq(0).removeClass("active")
             menuSwitch = true;
         }
     });
